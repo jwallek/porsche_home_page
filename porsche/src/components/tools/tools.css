@@ -1,0 +1,148 @@
+.shopping-tools-container{
+    height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;  
+    position: relative;
+    
+}
+.tools-title{
+    color: black;
+    
+    margin-right: auto;
+    margin-left: 4rem;
+    padding-top: 6rem;
+}
+.tools-container{
+    height: 15rem;
+    width: 90%;
+    
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.compare{
+    height: 100%;
+    width: 40%;
+    background-image: url('../../../public/images/tools/compare.jpg');
+    background-position: center;
+    background-repeat: no-repeat;  
+    position: relative;
+}
+.build,
+.offers,
+.finance{
+    height: 100%;
+    width: 20%;
+    position: relative;
+    
+}
+.build{
+    background-image: url('../../../public/images/tools/build.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.offers{
+    background-image: url('../../../public/images/tools/offers.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.finance{
+    background-image: url('../../../public/images/tools/finances.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.tool-link{
+    position: absolute;
+    bottom: -15%;
+    width: 100%;
+    height: 40%;
+
+    
+}
+.tool-link button{
+    width: 90%;
+    height: 35%;
+    font-size: 20px;
+    background: none;
+    border:none;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+    text-align: start;
+}
+
+.compare button{
+    width: 45%;
+    height: 35%;
+    
+}
+.tool-link button{
+    color: white;
+    font-weight: 900;
+    transition: 0.3s all;
+}
+
+.tool-link span{
+    color:red;
+    font-weight: 900;
+}
+.tool-link button:hover{
+    color: red;
+}
+
+@media screen and (max-width: 900px){
+    .tools-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .finance{
+        visibility: hidden;
+    }
+    .build, .offers{
+        width: 25%;
+    }
+    .compare{
+        width: 50%;
+        margin-left: 6rem
+    }
+    .build .tool-link button{
+        font-size: 16px;
+    }
+    .offers .tool-link button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .offers{
+        width: 32%;
+        margin-right: 2rem;
+    }
+    .build{
+        width: 32%;
+    }
+    
+    .compare{
+        width: 32%;
+        margin: 0;
+    }
+    .tools-container{
+        margin-left: 4rem;
+    }
+    .tools-title{
+        margin-left: 4rem;
+    }
+
+}

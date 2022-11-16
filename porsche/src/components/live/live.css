@@ -1,0 +1,497 @@
+.live-container{
+    min-height: 100vh;
+    max-width: 90vw; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+
+}
+.live-title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 0.5rem;
+    
+    
+}
+.containers-lg{
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 2rem;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-md,
+.container-sm{
+    visibility: hidden;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+
+}
+.container-sm{
+    grid-template-columns: auto;
+}
+.live-one,
+.live-two,
+.live-three{
+    height: 40rem;
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    
+}
+.media-lg-top{
+    width: 90%;
+    height: 65%;
+    border-bottom: 2rem solid transparent;
+    margin: auto;
+    margin-bottom: 2rem;
+    transition: 0.5s all;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.media-lg-top:nth-child(1){
+    background: url('../../../public/images/live/live_one.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.media-lg-top:nth-child(2){
+    background: url('../../../public/images/live/live_two.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-three .media-lg-top:nth-child(1){
+    background: url('../../../public/images/live/live_three.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.media-lg-top:nth-child(1):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/live_one.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.media-lg-top:nth-child(2):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/live_two.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.live-three .media-lg-top:nth-child(1):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/live_three.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.social-media{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url('../../../public/images/social-media/icons8-instagram.svg');
+    background-size: 40px 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: auto;
+    margin-right: 0.5rem;
+    margin-bottom: -1rem;
+    transition: 0.5s;
+}
+.user{
+    height: 5rem;
+    width: 20rem;
+    margin-right: auto;
+    transition: 0.3s all;
+    visibility: hidden;
+    margin-left: 0.5rem;
+}
+.user-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: middle;
+    margin-top: -0.5rem;
+    transition: 0.1s all;
+}
+.user-quote h5{
+    color: black; 
+    font-weight:400;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 15px;
+    
+}
+.user-logo{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: url('../../../public/images/porsche-vector-logo.png');
+    background-repeat: no-repeat;
+    background-size:35px 35px;
+    background-position: center;
+    margin-right: 0.5rem;
+}
+.media-lg-top:hover{
+    border-bottom: 2rem solid red;
+}
+
+.media-lg-top:hover::after{
+    content: 'Learn More >';
+    position: absolute;
+    margin-bottom: -1.6rem;
+    margin-right: 14rem;
+    color: white;
+    
+}
+
+.media-lg-top:nth-child(2){
+    margin-top: 2rem;
+}
+
+.media-lg-top:hover .social-media{
+    margin-bottom: 0.5rem;
+}
+.media-lg-top:hover .user{
+    margin-bottom: 2rem;
+    visibility: visible;
+    z-index: 999;
+    border: none;
+}
+.media-lg-top:hover::after{
+    content-visibility: visible;
+}
+
+.bottom{
+    height: 15rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto;
+}
+.media-lg{
+    width: 10rem;
+    height: 12rem;
+    border: none;
+    display: flex;
+    cursor: pointer;
+}
+.media-lg .social-media{
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+}
+
+.live-one .media-lg:nth-child(2) .social-media{
+    background: url('../../../public/images/social-media/icons8-facebook-circled-24.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.live-two .media-lg:nth-child(1) .social-media{
+    background: url('../../../public/images/social-media/icons8-twitter-30.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    z-index: 2;
+}
+.live-three .media-lg:nth-child(1) .social-media{
+    background: url('../../../public/images/social-media/icons8-youtube-50.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.play-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index:1;
+    margin-top: 4rem;
+    margin-left: 3.2rem;
+    background: url('../../../public/images/social-media/icons8-play-button-circled-60.png');  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    cursor: pointer;
+}
+.live-one .media-lg:nth-child(1){
+    background: url('../../../public/images/live/insta-10.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-one .media-lg:nth-child(1):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-10.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-one .media-lg:nth-child(1):hover::after{
+    content:'Call it a Dream';
+    font-size: 14px;
+    position: absolute;
+    margin-top: 9.5rem;
+    width: 110px;
+    text-align: center; 
+}
+.live-one .media-lg:nth-child(2){
+    background: url('../../../public/images/live/insta-7.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-one .media-lg:nth-child(2):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-7.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-one .media-lg:nth-child(2):hover::after{
+    content:'A Future Icon';
+    font-size: 14px;
+    position: absolute;
+    margin-top: 9.5rem;
+    width: 110px;
+    text-align: center;
+}
+.live-two .media-lg:nth-child(1){
+    background: url('../../../public/images/live/insta-8.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-two .media-lg:nth-child(1):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-8.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-two .media-lg:nth-child(1):hover::after{
+    content:'This is a Wheelie';
+    font-size: 13px;
+    position: absolute;
+    margin-top: 9.5rem;
+    width: 110px;
+    text-align: center;
+    margin-left: 0.5rem;
+}
+
+.live-two .media-lg:nth-child(2){
+    background: url('../../../public/images/live/insta-6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-two .media-lg:nth-child(2):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-two .media-lg:nth-child(2):hover::after{
+    content:'Just you and the';
+    font-size: 13px;
+    position: absolute;
+    margin-top: 9.5rem;
+    width: 110px;
+    text-align: center;
+    
+}
+.live-three .media-lg:nth-child(1){
+    background: url('../../../public/images/live/insta-5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-three .media-lg:nth-child(1):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-5.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-three .media-lg:nth-child(1):hover::after{
+    content:'Perfect may not Lie';
+    font-size: 13px;
+    position: absolute;
+    margin-top: 9.5rem;
+    width: 110px;
+    text-align: center; 
+    margin-left: 0.25rem;
+}
+.live-three .media-lg:nth-child(2){
+    background: url('../../../public/images/live/insta-9.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-three .media-lg:nth-child(2):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-9.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.live-three .media-lg:nth-child(2):hover::after{
+    content:'Well, they do say we';
+    font-size: 13px;
+    position: absolute;
+    margin-top: 9rem;
+    width: 110px;
+    text-align: center; 
+    margin-left: 0.25rem;
+}
+
+.media{
+    width: 20rem;
+    height: 20rem;
+    background-color: pink;
+    margin-top: -75rem;
+    cursor: pointer;
+    display: flex;
+}
+.media .social-media{
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
+}
+.media .social-media:nth-child(2){
+    background: url('../../../public/images/social-media/icons8-twitter-30.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.media .play-button{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    margin-left: 7.5rem;
+    margin-top: 7rem;
+}
+.container-md .media:nth-child(1), 
+.container-sm .media:nth-child(1){
+    background: url('../../../public/images/live/insta-6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-md .media:nth-child(1):hover,
+.container-sm .media:nth-child(1):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-6.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-md .media:nth-child(2){
+    background: url('../../../public/images/live/insta-8.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container-md .media:nth-child(2):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-8.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-md .media:nth-child(3),
+.container-sm .media:nth-child(2){
+    background: url('../../../public/images/live/insta-10.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container-md .media:nth-child(3):hover,
+.container-sm .media:nth-child(2):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-10.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-md .media:nth-child(4){
+    background: url('../../../public/images/live/insta-7.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container-md .media:nth-child(4):hover{
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('../../../public/images/live/insta-7.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loadMore{
+    width: 125px;
+    height: 50px;
+    font-size: 16px;
+    margin-left: 88.5%;
+    border: none;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.loadMore:hover{
+    background-color: red;
+}
+
+@media screen and (max-width: 1200px){
+    .containers-lg{
+        visibility: hidden;
+    }
+    .containers-lg .social-media{
+        visibility: hidden;
+    }
+    .container-md{
+        visibility: visible;
+        margin-top: 0;
+    }
+    .loadMore{
+        margin-top: 8rem;
+        margin-left: 83.5%
+    }
+    .live-title{
+        margin-bottom: -3rem;
+    }
+}
+
+@media  screen and (max-width: 875px) {
+    .container-md{
+        visibility: hidden;
+    }
+    .container-sm{
+        visibility: visible;
+    }
+    .loadMore{
+        margin-left: 62%;
+    }
+    .live-title{
+        margin-bottom: -4rem;
+    }
+}
