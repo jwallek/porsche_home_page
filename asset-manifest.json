@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/porsche_home_page/static/css/main.061b6ece.css",
+    "main.js": "/porsche_home_page/static/js/main.362a0185.js",
+    "static/media/live_one.jpeg": "/porsche_home_page/static/media/live_one.1bf6a57dc780b52527f9.jpeg",
+    "static/media/porsche-vector-logo.png": "/porsche_home_page/static/media/porsche-vector-logo.d2ce8907a6cd9e717c24.png",
+    "static/media/compare.jpg": "/porsche_home_page/static/media/compare.8e0d7d708dc0f7855183.jpg",
+    "static/media/live_two.webp": "/porsche_home_page/static/media/live_two.40e3de63ad8f68f3ab2a.webp",
+    "static/media/offers.jpg": "/porsche_home_page/static/media/offers.ba80ed357cb59f5139da.jpg",
+    "static/media/finances.jpg": "/porsche_home_page/static/media/finances.0af15b20de30927aee1f.jpg",
+    "static/media/live_three.webp": "/porsche_home_page/static/media/live_three.39080531c11a6875c04e.webp",
+    "static/media/build.jpg": "/porsche_home_page/static/media/build.3c11321fd501d618371d.jpg",
+    "static/media/insta-10.jpeg": "/porsche_home_page/static/media/insta-10.ce45d0eabf85b3b54819.jpeg",
+    "static/media/insta-5.jpeg": "/porsche_home_page/static/media/insta-5.37c2da6411f5f41712c3.jpeg",
+    "static/media/insta-6.jpeg": "/porsche_home_page/static/media/insta-6.e2649575855dad75a0bc.jpeg",
+    "static/media/insta-7.jpeg": "/porsche_home_page/static/media/insta-7.22acd42fb694a9410c25.jpeg",
+    "static/media/insta-9.jpeg": "/porsche_home_page/static/media/insta-9.d01be729adc682663aa3.jpeg",
+    "static/media/icons8-instagram.svg": "/porsche_home_page/static/media/icons8-instagram.70bd583fe0979f2075d3.svg",
+    "index.html": "/porsche_home_page/index.html",
+    "main.061b6ece.css.map": "/porsche_home_page/static/css/main.061b6ece.css.map",
+    "main.362a0185.js.map": "/porsche_home_page/static/js/main.362a0185.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.061b6ece.css",
+    "static/js/main.362a0185.js"
+  ]
+}
